@@ -104,18 +104,15 @@ class ListingCreateInput {
   price!: number;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  title?: string | null;
+  @Field(() => String)
+  title!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: () => TripCreateNestedManyWithoutListingsInput,
   })
   @ValidateNested()
@@ -127,7 +124,7 @@ class ListingCreateInput {
   trips?: TripCreateNestedManyWithoutListingsInput;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: () => WishlistCreateNestedManyWithoutListingsInput,
   })
   @ValidateNested()

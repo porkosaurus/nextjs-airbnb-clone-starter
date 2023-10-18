@@ -309,7 +309,6 @@ export class ListingControllerBase {
           },
         },
 
-        tripInfo: true,
         updatedAt: true,
 
         user: {
@@ -418,6 +417,7 @@ export class ListingControllerBase {
           },
         },
 
+        tripInfo: true,
         updatedAt: true,
 
         user: {

@@ -14,7 +14,7 @@ export type ListingUpdateInput = {
   placeSpace?: InputJsonValue;
   placeType?: string;
   price?: number;
-  title?: string | null;
+  title?: string;
   trips?: TripUpdateManyWithoutListingsInput;
   wishlists?: WishlistUpdateManyWithoutListingsInput;
 };
