@@ -61,17 +61,6 @@ class WishlistOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  tripInfo?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @IsOptional()
-  @IsEnum(SortOrder)
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   updatedAt?: SortOrder;
 
   @ApiProperty({

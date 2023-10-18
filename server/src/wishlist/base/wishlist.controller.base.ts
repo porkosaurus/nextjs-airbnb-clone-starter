@@ -69,7 +69,6 @@ export class WishlistControllerBase {
           },
         },
 
-        tripInfo: true,
         updatedAt: true,
 
         user: {
@@ -107,7 +106,6 @@ export class WishlistControllerBase {
           },
         },
 
-        tripInfo: true,
         updatedAt: true,
 
         user: {
@@ -146,7 +144,6 @@ export class WishlistControllerBase {
           },
         },
 
-        tripInfo: true,
         updatedAt: true,
 
         user: {
@@ -204,7 +201,6 @@ export class WishlistControllerBase {
             },
           },
 
-          tripInfo: true,
           updatedAt: true,
 
           user: {
@@ -251,7 +247,6 @@ export class WishlistControllerBase {
             },
           },
 
-          tripInfo: true,
           updatedAt: true,
 
           user: {

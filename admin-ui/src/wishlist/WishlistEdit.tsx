@@ -16,7 +16,6 @@ export const WishlistEdit = (props: EditProps): React.ReactElement => {
         <ReferenceInput source="listing.id" reference="Listing" label="listing">
           <SelectInput optionText={ListingTitle} />
         </ReferenceInput>
-        <div />
         <ReferenceInput source="user.id" reference="User" label="user">
           <SelectInput optionText={UserTitle} />
         </ReferenceInput>

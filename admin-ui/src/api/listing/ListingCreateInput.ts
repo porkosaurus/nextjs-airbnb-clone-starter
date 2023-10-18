@@ -14,7 +14,7 @@ export type ListingCreateInput = {
   placeSpace: InputJsonValue;
   placeType: string;
   price: number;
-  title: string;
+  title?: string | null;
   trips?: TripCreateNestedManyWithoutListingsInput;
   wishlists?: WishlistCreateNestedManyWithoutListingsInput;
 };

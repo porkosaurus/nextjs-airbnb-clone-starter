@@ -142,7 +142,7 @@ class ListingUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  title?: string;
+  title?: string | null;
 
   @ApiProperty({
     required: false,

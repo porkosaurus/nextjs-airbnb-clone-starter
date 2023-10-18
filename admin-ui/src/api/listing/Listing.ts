@@ -16,7 +16,7 @@ export type Listing = {
   placeSpace: JsonValue;
   placeType: string;
   price: number;
-  title: string;
+  title: string | null;
   trips?: Array<Trip>;
   updatedAt: Date;
   wishlists?: Array<Wishlist>;

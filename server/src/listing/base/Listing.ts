@@ -120,15 +120,18 @@ class Listing {
   price!: number;
 
   @ApiProperty({
-    required: true,
+    required: false,
     type: String,
   })
   @IsString()
-  @Field(() => String)
-  title!: string;
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  title!: string | null;
 
   @ApiProperty({
-    required: true,
+    required: false,
     type: () => [Trip],
   })
   @ValidateNested()
@@ -145,7 +148,7 @@ class Listing {
   updatedAt!: Date;
 
   @ApiProperty({
-    required: true,
+    required: false,
     type: () => [Wishlist],
   })
   @ValidateNested()
