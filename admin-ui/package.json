@@ -1,5 +1,5 @@
 {
-  "name": "@airbnb-server1/admin",
+  "name": "@airbnb-server/admin",
   "private": true,
   "dependencies": {
     "@apollo/client": "3.6.9",

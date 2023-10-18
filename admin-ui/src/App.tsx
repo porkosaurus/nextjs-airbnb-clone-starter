@@ -40,7 +40,7 @@ const App = (): React.ReactElement => {
   return (
     <div className="App">
       <Admin
-        title={"airbnb-server1"}
+        title={"airbnb-server"}
         dataProvider={dataProvider}
         authProvider={jwtAuthProvider}
         theme={theme}

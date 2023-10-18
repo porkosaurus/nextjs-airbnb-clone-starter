@@ -347,7 +347,6 @@ export class UserControllerBase {
           },
         },
 
-        tripInfo: true,
         updatedAt: true,
 
         user: {
@@ -456,6 +455,7 @@ export class UserControllerBase {
           },
         },
 
+        tripInfo: true,
         updatedAt: true,
 
         user: {
