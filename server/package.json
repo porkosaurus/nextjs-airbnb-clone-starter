@@ -1,5 +1,5 @@
 {
-  "name": "@airbnb-server/server",
+  "name": "@airbnb-server1/server",
   "private": true,
   "scripts": {
     "start": "nest start",
@@ -11,14 +11,12 @@
     "db:migrate-save": "prisma migrate dev",
     "db:migrate-up": "prisma migrate deploy",
     "db:clean": "ts-node scripts/clean.ts",
-    "db:init": "run-s seed",
+    "db:init": "run-s \"db:migrate-save -- --name 'initial version'\" db:migrate-up seed",
     "prisma:generate": "prisma generate",
     "docker:dev": "docker-compose -f docker-compose.dev.yml up -d",
     "package:container": "docker build .",
     "compose:up": "docker-compose up -d",
-    "compose:down": "docker-compose down --volumes",
-    "prisma:pull": "prisma db pull",
-    "prisma:push": " prisma db push"
+    "compose:down": "docker-compose down --volumes"
   },
   "dependencies": {
     "@nestjs/common": "8.4.7",
